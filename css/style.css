@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.session {padding: 80px 0;}
+
+.btn {
+    border-radius: 50px;
+    color: #fff !important;
+    padding: 10px 25px;
+}
+
+.btn:hover {
+    background-color: #094C8C !important;
+    transition: 0.2s;
+}
+
+.btn-outline-primary {
+    border-radius: 6px !important; 
+    border: 1px #4A89D3 solid !important;
+    padding: 15px 25px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4A89D3 !important;
+    color: #fff !important;
+    transition: 0.2s;
+}
+
+.card-noticias .card-body {
+    min-height: 280px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-servicos {
+    background-color: #F3F3F3 !important;
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+
+    min-height: 200px;
+    padding: 25px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.footer-menu .menu {
+    height: 150px !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-pills .nav-link {
+    border-radius: 50px;
+    background-color: #4A89D3;
+    color: #fff;
+    margin-right: 10px;
+    padding: 10px 25px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #094C8C;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    background: #F3F3F3;
+    border-radius: 4px;
+
+    font-size: 18px;
+    color: #4A89D3;
+}
+
+.accordion-header {
+    margin-bottom: 8px;
+}
+.accordion-body {
+    padding: 1rem 1.25rem;
+    margin-bottom: 10px;
+    border: 1px #C1D4EB solid;
+    border-radius: 4px;
+}
+
+.accordion-item {
+    border: 0px;
+}
+
+input.search-header {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.form-ouvidoria {
+    background-color: #FEFEF9;
+    border: 1px solid #dbdbd74d;
+    padding: 50px 180px;
+}
+
+.form-ouvidoria .btn-link {
+    background-color: #FEFEF9 !important;
+    color: #4A89D3 !important;
+}
+
+.form-ouvidoria .btn-link:hover {color: #094C8C !important;}
+
+a.page-link {
+    background-color: #F3F3F3;
+    color: #4A89D3;
+}
+
+.page-link:hover {
+    color: #fff;
+    background-color: #4A89D3;
+    border-color: #4A89D3;
+}
+
+ul.navbar-nav li {margin: 0px 14px;}
+ul.nav li {margin: 0px -7px;}
+
+.color-primary {color: #4A89D3 !important;}
+.color-secondary {color: #094C8C !important;}
+.color-light {color: #C1D4EB;}
+.color-dark{color: #434343 !important;}
+
+.nav-link.color-light:hover {color: #fff;}
+
+.bg-primary {background-color: #4A89D3 !important;}
+.bg-secondary {background-color: #094C8C !important;}
+.bg-gray {background-color: #F3F3F3;}
+
+.font-40 {font-size: 40px;}
+.font-25 {font-size: 25px;}
+.font-22 {font-size: 22px;}
+.font-20 {font-size: 20px;}
+.font-18 {font-size: 18px;}
+.font-16 {font-size: 16px;}
+.font-15 {font-size: 15px;}
+.font-14 {font-size: 14px;}
+.font-13 {font-size: 13px;}
+
+.dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
+    text-decoration: underline;
+    background-color: #fff;
+}
+.dropdown-item:focus, .dropdown-item:hover {color: #4A89D3;}
+.dropdown-item.active, .dropdown-item:active {color: #094C8C;}
+
+.dropdown:hover .dropdown-menu { display: block;}
+
+.submenu {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+    text-align: left;
+    list-style: none;
+}
+
+@media (max-width: 600px){
+    .session {padding: 40px 0;}
+    .form-ouvidoria {padding: 40px 24px;}
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ color: #094C8C; }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}	
+/* ============ small devices .end// ============ */
